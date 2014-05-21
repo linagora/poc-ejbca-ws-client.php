@@ -1,0 +1,46 @@
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ns1="http://ws.protocol.core.ejbca.org/">
+  <SOAP-ENV:Body>
+    <ns1:editUser>
+      <arg0>
+	<caName>CA_TEST_LAPOSTE</caName>
+	<certificateProfileName>CP_USER-AUTH</certificateProfileName>
+	<clearPwd>false</clearPwd>
+	<email>test0001@laposte.fr</email>
+	<endEntityProfileName>EP_USER-AUTH</endEntityProfileName>
+	<extendedInformation><name>subjectdirattributes</name><value></value></extendedInformation>
+	<keyRecoverable>false</keyRecoverable>
+	<sendNotification>false</sendNotification>
+	<status>10</status>
+	<subjectDN>CN=TEST,O=LA POSTE,C=FR</subjectDN>
+	<tokenType>P12</tokenType>
+	<username>test0001</username>
+      </arg0>
+    </ns1:editUser>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:findUserResponse xmlns:ns2="http://ws.protocol.core.ejbca.org/">
+      <return>
+	<caName>CA_TEST_LAPOSTE</caName>
+	<certificateProfileName>CP_USER-AUTH</certificateProfileName>
+	<clearPwd>false</clearPwd>
+	<email>test@laposte.fr</email>
+	<endEntityProfileName>EP_USER-AUTH</endEntityProfileName>
+	<extendedInformation><name>subjectdirattributes</name><value></value></extendedInformation>
+	<keyRecoverable>false</keyRecoverable>
+	<sendNotification>false</sendNotification>
+	<status>10</status>
+	<subjectAltName></subjectAltName>
+	<subjectDN>CN=test,OU=AUTH,O=LA POSTE,C=FR</subjectDN>
+	<tokenType>P12</tokenType>
+	<username>test</username>
+      </return>
+    </ns2:findUserResponse>
+  </soap:Body>
+</soap:Envelope>
