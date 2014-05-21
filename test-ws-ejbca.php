@@ -12,6 +12,7 @@ define('MATCH_WITH_USERNAME', 0);
 $url="https://dca-laptop:8443/ejbca/ejbcaws/ejbcaws?wsdl";
 $url="https://ctyv0083:8443/ejbca/ejbcaws/ejbcaws?wsdl";
 $url="wsdl.lina.xml";
+$url="wsdl.xml";
 define('CERT', 'ws-login.pem');
 $passphrase='password';
 
