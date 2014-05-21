@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.protocol.core.ejbca.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:editUser>
+         <arg0>
+            <caName>NewUI</caName>
+            <certificateProfileName>ENDUSER</certificateProfileName>
+            <clearPwd>true</clearPwd>
+            <email>bbonfils@linagora.com</email>
+            <endEntityProfileName>EMPTY</endEntityProfileName>
+            <keyRecoverable>true</keyRecoverable>
+            <password>foo123</password>
+            <sendNotification>false</sendNotification>
+            <status>10</status>
+            <subjectDN>cn=Demo</subjectDN>
+            <tokenType>P12</tokenType>
+            <username>demo</username>
+         </arg0>
+      </ws:editUser>
+   </soapenv:Body>
+</soapenv:Envelope>

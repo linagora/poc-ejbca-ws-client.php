@@ -1,0 +1,6 @@
+* WSDL URI
+** client
+   https://ctyv0083:8443/ejbca/ejbcaws/ejbcaws?wsdl
+** Linagora
+   https://dca-laptop:8443/ejbca/ejbcaws/ejbcaws?wsdl
+* 
