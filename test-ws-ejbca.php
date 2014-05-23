@@ -85,7 +85,7 @@ class WrappedSoapClient extends SoapClient {
  }
 
 
-$client=new WrappedSoapClient(
+$client=new SoapClient(
 	$url,
 	array(
 		'trace' => 1,
